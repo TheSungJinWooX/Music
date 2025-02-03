@@ -18,17 +18,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = ("")
 
-API_HASH = getenv("API_HASH")
+API_HASH = ("")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = ("")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = ("")
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -45,7 +45,7 @@ DURATION_LIMIT_MIN = int(
 
 EXTRA_PLUGINS = getenv(
     "EXTRA_PLUGINS",
-    "False",
+    "True",
 )
 
 # Fill True if you want to load extra plugins
@@ -53,7 +53,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/MISH0009/Extra-plugins",
+    "https://github.com/TheSungjinwooX/Extra-plugins",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -70,13 +70,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = 
 
 
 # Your User ID.
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6955568347").split())
-)  # Input type must be interger
+OWNER_ID = ("")
+# Input type must be interger
 
 
 # make your bots privacy from telegra.ph and put your url here
@@ -96,7 +95,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/MISH0009/DNS-MUSIC",
+    "https://github.com/TheSungjinwooX/Music",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -109,15 +108,15 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/Dns_Official_Channel"
-)  # Example:- https://t.me/TheTeamVivek
+    "SUPPORT_CHANNEL", "https://t.me/Sungupdates"
+)  # Example:- https://t.me/MusicSupport
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/DNS_NETWORK"
-)  # Example:- https://t.me/TheTeamVk
+    "SUPPORT_GROUP", "https://t.me/Ahjin_Sprt"
+)  # Example:- https://t.me/MusicChats
 
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", True)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -137,7 +136,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/Dns_Official_Channel")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/Itachi_Bruh")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -179,7 +178,7 @@ SET_CMDS = getenv("SET_CMDS", "True")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @DnsStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = ("")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
